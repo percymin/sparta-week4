@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title123</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function hey() {
+            $.ajax({
+                type: "POST",
+                url: "/test",
+                data: {title_give: '봄날은간다'},
+                success: function (response) {
+                    console.log(response['msg'])
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<button onclick="hey()">qjxms</button>
+
+</body>
+</html>
